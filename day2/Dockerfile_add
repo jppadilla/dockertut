@@ -1,0 +1,4 @@
+FROM alpine
+RUN apk update
+#Changed the link to download a photo instead, http://www.vlsitechnology.org/pharosc_8.4.tar.gz
+ADD https://gogoanime.ai/img/icon/logo.png .
