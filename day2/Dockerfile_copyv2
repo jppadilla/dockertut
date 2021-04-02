@@ -3,4 +3,6 @@ RUN echo "Welcome to dockerlabs v2!" > /opt/index.html
 
 FROM nginx:alpine
 COPY --from=stage_1 /opt/index.html /usr/share/nginx/html
+# Demonstration to cope from a separate image 
+#COPY --from=nginx:latest /etc/nginx/nginx.conf /nginx.conf
 ENTRYPOINT ["nginx", "-g", "daemon off;"]

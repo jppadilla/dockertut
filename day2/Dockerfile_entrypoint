@@ -1,0 +1,2 @@
+FROM alpine
+ENTRYPOINT ["/bin/echo", "Hi, your ENTRYPOINT instruction in Exec Form !"]
