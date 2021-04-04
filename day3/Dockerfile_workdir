@@ -1,0 +1,4 @@
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
+RUN echo "Welcome to Dockerlabs WORKDIR tut" > index.html
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

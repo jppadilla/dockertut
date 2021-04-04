@@ -1,0 +1,4 @@
+FROM base_im
+
+RUN rm index.html && echo $WELCOME_MESSAGE > index.html
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

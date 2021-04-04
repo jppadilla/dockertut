@@ -1,0 +1,8 @@
+FROM nginx:1.13
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD curl -f http://localhost/ || exit 1
+EXPOSE 80
+
+#remove nginx.conf to check if it's working.
+# docker exec CONTAINER rm /etc/nginx/nginx.conf
+# sleep 30; docker ps

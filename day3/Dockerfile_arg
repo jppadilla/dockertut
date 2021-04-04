@@ -1,0 +1,6 @@
+FROM nginx:alpine
+ARG WELCOME_USER="PAULO"
+WORKDIR /usr/share/nginx/html
+RUN echo "Welcome $WELCOME_USER to Dockerlabs WORKDIR tut" > index.html
+ENV SOME_USER=$WELCOME_USER
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
