@@ -1,3 +1,4 @@
+if you have some tips and tricks send a pull request
 # - Dockerfile -
 
 jargons:
