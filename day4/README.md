@@ -13,7 +13,9 @@ docker run -itd --name bot --env-file ENV_FILE -v HOST_DEST:/anime_bot/file/ IMA
 
 # ENV_FILE (sample)
 DISCORD_TOKEN=
+
 GUILD_TOKEN=
+
 CHANNEL_TOKEN=
 
 # Commands
