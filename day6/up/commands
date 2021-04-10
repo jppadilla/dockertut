@@ -1,0 +1,4 @@
+docker-compose up --no-start
+docker-compose up -d
+docker-compose up -d --build
+docker-compose up -d --build --force-recreate

@@ -1,0 +1,4 @@
+docker-compose up -d --scale webserver=3
+docker-compose ps
+docker-compose kill
+docker-compose ps

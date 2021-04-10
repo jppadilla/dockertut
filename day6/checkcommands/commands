@@ -1,0 +1,17 @@
+docker-compose images
+docker-compose ps
+docker-compose ps --services
+docker-compose stop
+docker-compose stop webserver
+docker-compose start webserver
+docker-compose restart webserver
+docker-compose restart -t 30 webserver
+docker-compose pause
+docker-compose unpause
+docker-compose logs
+docker-compose logs -f 
+docker-compose --tails="2" 
+docker-compose port webserver 80
+docker-compose run webserver /bin/sh
+docker-compose rm -fs webserver
+docker-compose down --rmi (can be all or local) --volumes
